@@ -1,0 +1,11 @@
+server:
+  port: 8888
+
+dubbo:
+  application:
+    name: dubbo-provider2
+  protocol:
+    name: dubbo
+    port: -1 # 配置为-1则分配一个未被占用的端口
+  registry:
+    address: zookeeper://127.0.0.1:2181
